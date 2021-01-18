@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+body>main,
+body>main>div {
+    float: left;
+    width: 555px;
+}

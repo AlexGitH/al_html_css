@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A-level Homework 02</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        blockquote {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Homework 02</h1>
+    <h2>Level 1</h2>
+
+    <h3>CSS selector priorities (from highest to lowest):</h3>
+
+    <ol>
+        <li>inline style attribute</li>
+        <li>id</li>
+        <li>tag with attribute (i.e. blockquote[cite])</li>
+        <li>class</li>
+        <li>tag</li>
+    </ol>
+
+    <figure>
+        <blockquote style="color: blue;" cite="https://www.example.com/">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque est in aperiam dolore expedita quis
+                repudiandae soluta dignissimos ex modi eius aliquid, officiis tenetur. Nesciunt dolorem consequuntur
+                dignissimos qui eos!</p>
+        </blockquote>
+        <figcaption>—John Doe, <cite>Expedita vitae aspernatur</cite></figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>Level 2</h2>
+
+    <div class="holder">
+        <h1>Title</h1>
+        <ul class="list">
+            <li>
+                <a href="#">link1</a>
+                <ul>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link3</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.youtube.com/">link4</a></li>
+            <li><a href="https://validator.w3.org/">link5</a></li>
+            <li><a href="#">link6</a></li>
+        </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, accusamus.</p>
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <hr>
+
+    <h2>Level 3</h2>
+
+    <div class="text-box">
+        <h3>Покрасьте меня в розовый цвет (color:pink).</h3>
+        <p>Данный элемент должен остаться неоформленным.</p>
+        <p id='greycol'>Покрасьте меня в серый цвет (color:grey).</p>
+        <div>Данный элемент должен остаться неоформленным.</div>
+        <div>
+            <p>Покрасьте меня в красный цвет (color:red).</p>
+        </div>
+        <h3>Данный элемент должен остаться неоформленным.</h3>
+        <p>Покрасьте меня в зеленый цвет (color:green).</p>
+        <p class='yellow'>Покрасьте меня в желтый цвет (color:yellow).</p>
+    </div>
+
+    <hr>
+
+    <h2>Level 4</h2>
+
+    <div class="bg-box"></div> 
+
+</body>
+
+</html>

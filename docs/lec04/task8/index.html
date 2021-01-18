@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec04: task 8</title>
+    <link rel="icon" href="/favicon.png">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        div.container {
+            position: relative;
+            box-sizing: content-box;
+            display: inline-block;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            border-top: none;
+        }
+        
+        div.ball {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: red;
+            border: 2px solid red;
+            border-radius: 50%;
+            animation: action 5s infinite;
+        }
+
+        @keyframes action {
+        	0% {
+                transform: translate(0, 0);
+                animation-timing-function: ease-in;
+            }
+            25% {
+                transform: translate(20px, 270px);
+                animation-timing-function: ease-out;
+            }
+            40.5% {
+                transform: translate(40px, 170px);
+                animation-timing-function: ease-in;
+            }
+            55%  {
+                transform: translate(60px, 270px);
+                animation-timing-function: ease-out;
+            }
+            69.5% {
+                transform: translate(80px, 210px);
+                animation-timing-function: ease-in;
+            }
+            82% {
+                transform: translate(90px, 270px);
+                animation-timing-function: ease-out;
+            }
+            91.5% {
+                transform: translate(100px, 245px);
+                animation-timing-function: ease-in;
+            }
+            100% {
+                transform: translate(105px, 270px);
+                animation-timing-function: ease-out;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- <h2>Завдання 8</h2> -->
+
+        <div class="container">
+            <div class="ball"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>

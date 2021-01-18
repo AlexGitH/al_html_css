@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec03: task 7*</title>
+    <link rel="icon" href="/favicon.png">
+
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .status-bar {
+            color: #59cf78;
+            position: absolute;
+            width: 600px;
+            height: 40px;
+            background-color: #eeeeee;
+            border: 2px solid #3465a4;
+        }
+        .status-bar::after {
+            content: "100";
+            z-index: 10;
+            position: absolute;
+            line-height: 35px;
+            text-align: right;
+            right: 5px;
+        }
+        .status-bar::before {
+            content: "0";
+            z-index: 10;
+            position: absolute;
+            line-height: 35px;
+            text-align: left;
+            left: 5px;
+        }
+        .current-progress {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            line-height: 3px;
+        }
+        .progress {
+            position: absolute;
+            width: 63%;
+            height: 100%;
+            background-color: #2a6099;
+            border-right: 2px solid #3465a4;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <H1>POSITION</H1>
+        <h2>Завдання 7*</h2>
+        <div class="status-bar">
+            <p class="current-progress">63%</p>
+            <div class="progress"></div>
+        </div>
+    </main>
+</body>
+
+</html>

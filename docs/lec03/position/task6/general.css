@@ -1,0 +1,9 @@
+body>main {
+    width: 657px;
+    position: absolute;
+}
+
+main>div.traffic-lights-container,
+main>div.scrollbar-field {
+    border: 2px dotted #818181;
+}

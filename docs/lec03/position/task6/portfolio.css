@@ -1,0 +1,40 @@
+main>div.scrollbar-field {
+    height: 400px;
+    overflow: auto;
+}
+
+div.scrollbar-field>div.info {
+    padding: 20px;
+    border: 1px solid #b43273;
+    border-radius: 25px;
+    position: relative;
+    z-index: -2;
+    /* background-color: hotpink; */
+}
+
+div.scrollbar-field>div.info>h1 {
+    text-align: left;
+    color: #b43273;
+}
+
+div.scrollbar-field>div.info>p {
+    color: #8b4266;
+}
+
+div.scrollbar-field>div.contacts {
+    position: absolute;
+    background: #b43273;
+    height: 50px;
+    bottom: 0px;
+    right: 2px;
+    z-index: -1;
+    left: 2px;
+    border-top: 1px solid #76214b;
+}
+
+div.scrollbar-field>div.contacts>p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 6px;
+}

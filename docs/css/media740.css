@@ -1,0 +1,108 @@
+/* HEADER  */
+header>.titles:first-child,
+header>.titles:last-child {
+    font-size: 3.5rem;
+}
+
+/* CARD LIST */
+
+.card {
+  width: 49%;
+  padding: 5px;
+  margin-top: 0;
+  box-shadow: 0 3px 8px 1px #1d006f;
+}
+
+ul>li {
+  width: 90%;
+  padding: 0 5px;
+}
+
+.card ul {
+  z-index: 1;
+  font-size: 24px;
+  flex-flow: column wrap;
+}
+
+.card a {
+  line-height: 50px;
+  z-index: 10;
+  position : sticky;
+  background: #ff38ff;
+  top: 0;
+  left: 0;
+}
+
+.card>hr {
+  z-index: 11;
+  position : sticky;
+  border-bottom: 1px solid white;
+  top: 60px;
+}
+
+/*** HOMEWORK ***/
+
+
+/* HEADER  */
+
+header:not([class*="general-page"])>.titles:first-child {
+    align-self: self-start;
+    font-size: 3.5rem;
+}
+
+header:not([class*="general-page"])>.titles:last-child {
+    font-size: 4.5rem;
+}
+
+header:not([class*="general-page"])>.titles:first-child {
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* BURGER MENU ICON */
+
+label.menu-btn {
+    visibility: visible;
+    display:flex;
+}
+
+/* MENU */
+
+#menu_toggle ~* .menu {
+    visibility: hidden;
+    display:none;
+    /* order: 3; */
+}
+
+#menu_toggle:checked ~* .menu {
+    visibility: visible;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.menu {
+  padding: 0;
+  box-shadow: 0 0px 7px 0 #333232;
+}
+
+.menu>a.back {
+  line-height: 50px;
+  font-size: 20px;
+}
+.menu>ul {
+    width: 100vw;
+    border: none;
+}
+
+.menu>ul>li {
+  padding: 0;
+  width: 100%;
+}
+div.menu>ul>li>a {
+  padding-left: 10px;
+  line-height: 60px;
+  font-size: 24px;
+}

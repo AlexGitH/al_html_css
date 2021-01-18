@@ -1,0 +1,42 @@
+/* scalable traffic lights (based on font-size of parent element) */
+div.traffic-lights-container {
+    box-sizing: border-box;
+    margin-top: 25px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; /* for scaling traffic lights*/
+}
+
+div.traffic-lights-container>div.traffic-lights {
+    display: inline-block;
+    width: 10em;
+    border: 1px solid #000;
+}
+
+div.traffic-lights-container>div.traffic-lights>div.circle:last-child {
+    margin-bottom: 16.6%;
+}
+
+div.traffic-lights-container>div.traffic-lights>div.circle {
+    width: 6.25em;
+    height: 6.25em;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: auto auto;
+    margin-top: 16.6%;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.yellow {
+    background-color: yellow;
+}
+
+div.green {
+    background-color: green;
+}

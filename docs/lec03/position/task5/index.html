@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec03: task 5</title>
+    <link rel="icon" href="/favicon.png">
+
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+
+    <style>
+        body>main {
+            width : 950px;
+        }
+
+        main>div {
+            float: left;
+        }
+
+        main>div>div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        div.fig1,
+        div.fig2 {
+            width: 500px;
+            height: 500px;
+        }
+
+        div.fig2 {
+            height: 200px;
+        }
+
+        div.fig3,
+        div.fig4,
+        div.fig5 {
+            width: 300px;
+            height: 300px;
+        }
+
+
+        .bdr-red {
+            border: 2px solid red;
+        }
+
+        .bdr-green {
+            border: 2px solid green;
+        }
+
+        .bdr-blue {
+            border: 2px solid blue;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .fig1>.bdr-red {
+            top: 50px;
+            left: 50px;
+        }
+
+        .fig1>.bdr-blue {
+            top: 100px;
+            left: 200px;
+        }
+
+        .fig1>.bdr-green {
+            top: 150px;
+            left: 350px;
+        }
+
+        .clearfix {
+            display: block;
+            clear: both;
+        }
+        .fig2>div {
+            display: inline-block;
+        }
+
+        .fig2>.bdr-red {
+            top: 50px;
+            left: 50px;
+        }
+
+        .fig2>.bdr-blue {
+            top: 50px;
+            left: 95px;
+        }
+
+        .fig2>.bdr-green {
+            top: 50px;
+            left: 140px;
+        }
+
+        .fig3>.bdr-red,
+        .fig4>.bg-red,
+        .fig5>.bg-red {
+            top: 45px;
+            left: 45px;
+        }
+
+        .fig3>.bdr-blue,
+        .fig4>.bg-blue,
+        .fig5>.bg-blue {
+            top: 0;
+            left: 100px;
+        }
+
+        .fig3>.bdr-green,
+        .fig4>.bg-green,
+        .fig5>.bg-green {
+            top: -45px;
+            left: 155px;
+        }
+
+        .fig5>.bg-blue {
+            z-index: 100;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <H1>POSITION</H1>
+        <h2>Завдання 5</h2>
+
+        <div class="fig1">
+            <div class="bdr-red"></div>
+            <div class="bdr-blue"></div>
+            <div class="bdr-green"></div>
+        </div>
+
+        <div class="fig2">
+            <div class="bdr-red"></div>
+            <div class="bdr-blue"></div>
+            <div class="bdr-green"></div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="fig3">
+            <div class="bdr-red"></div>
+            <div class="bdr-blue"></div>
+            <div class="bdr-green"></div>
+        </div>
+
+        <div class="fig4">
+            <div class="bg-red"></div>
+            <div class="bg-blue"></div>
+            <div class="bg-green"></div>
+        </div>
+
+        <div class="fig5">
+            <div class="bg-red"></div>
+            <div class="bg-blue"></div>
+            <div class="bg-green"></div>
+        </div>
+    </main>
+</body>
+
+</html>

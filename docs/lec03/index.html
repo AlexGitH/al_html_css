@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wifth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 3</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/homework.css">
+    <link rel="stylesheet" href="/css/menu-toggle.css">
+    <link rel="stylesheet" media="screen and (max-width: 930px)" href="/css/media740.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="/css/media360.css" />
+</head>
+
+<body>
+    <input id="menu_toggle" type="checkbox" />
+
+    <div class="main-container">
+        <header>
+            <div class="titles">Homework</div>
+            <div class="titles middle"><span class="subtitle-start">A</span>-<span class="subtitle-end">Level</span></div>
+            <div class="titles">3</div>
+        </header>
+        <main>
+            <label class="menu-btn" for="menu_toggle">
+                <span></span>
+            </label>
+
+            <div class="menu">
+                <a href="/index.html" class="back">All works</a>
+                <ul id="list" data-li="1">
+                    <li><a onclick="list.setAttribute('data-li',1)" href="./float/task1/index.html" target="mainView">Float:Темный и синий блоки</a></li>
+                    <li><a onclick="list.setAttribute('data-li',2)" href="./float/task2/index.html" target="mainView">Float:Mazda CX-5</a></li>
+                    <li><a onclick="list.setAttribute('data-li',3)" href="./float/task3/index.html" target="mainView">Float: блоки и текст</a></li>
+                    <li><a onclick="list.setAttribute('data-li',4)" href="./float/task4/index.html" target="mainView">Float: пагинация + текст</a></li>
+                    <li><a onclick="list.setAttribute('data-li',5)" href="./position/task5/index.html" target="mainView">Position: R/G/B Квадраты</a></li>
+                    <li><a onclick="list.setAttribute('data-li',6)" href="./position/task6/index.html" target="mainView">Position: Портфолио + светофор</a></li>
+                    <li><a onclick="list.setAttribute('data-li',7)" href="./position/task7/index.html" target="mainView">Position: Progress Bar</a></li>
+                </ul>
+            </div>
+
+            <iframe id="main_frame" name="mainView" src="./float/task1/index.html"></iframe>
+
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec03: task 4</title>
+    <link rel="icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+
+        div.page_bar {
+            text-align: center;
+        }
+
+        div.page_bar>ul {
+            margin: 0;
+            padding: 0;
+            line-height: 50px;
+            display: inline;
+            list-style: none;
+        }
+
+        div.page_bar>ul>li {
+            display: inline;
+        }
+
+        div.page_bar>ul>li:hover,
+        div.page_bar>div.arrow:hover {
+            cursor: pointer;
+        }
+
+        div.page_bar>div.arrow {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("./arrow_side.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        div.page_bar>div.arrow.left {
+            float: left;
+            margin-left: 75px;
+            transform: rotateY(180deg);
+        }
+
+        div.page_bar>div.arrow.right {
+            float: right;
+            margin-right: 75px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <H1>FLOAT</H1>
+
+        <h2>Завдання 4</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque reiciendis error quae totam dicta voluptas ea
+            aliquid atque sequi minus inventore fugiat, deleniti expedita. Ipsam accusamus voluptatum fugiat nisi vero.
+        </p>
+        <div class="page_bar">
+            <div class="arrow left"></div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+            <div class="arrow right"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, itaque dolorum porro harum, sequi
+            praesentium quis quibusdam nam esse assumenda, amet nisi voluptas quasi qui accusamus explicabo veniam
+            ratione?</p>
+    </main>
+</body>
+
+</html>

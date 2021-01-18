@@ -1,0 +1,37 @@
+
+p.recept {
+  margin-bottom: -18px;
+}
+
+.recept {
+  font-weight: normal;
+  font-family: Courier;
+}
+
+h1 {
+  margin: 0;
+}
+.head-title {
+  font-weight: normal;
+  font-family: "Times New Roman";
+}
+
+p {
+  font-size: large;
+  font-family: "Times New Roman";
+}
+
+img {
+  max-width: 100%;;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}

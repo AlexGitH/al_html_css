@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style type="text/css">
+div.form-table {
+    display: table;
+}
+.in-line {
+    display: inline;
+}
+
+div.form-row {
+    display: table-row;
+}
+
+label, input, textarea, div.cell-container {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+div.form-row>label {
+    vertical-align: middle;
+}
+label {
+    padding-right: 10px;
+}
+
+div.cell-container {
+    display: inline;
+}
+</style>
+</head>
+<body>
+    <fieldset>
+        <legend>Application form</legend>
+        <!-- <input type="radio" id="radio">
+        <label for="radio">Spirit of radio</label> -->
+
+        <form class="form-row" action="#">
+            
+            <div class="form-table">
+            <div class="form-row">
+
+            <label>Full name</label>
+            <!-- <input type="text" placeholder="first_name"> -->
+            <input type="text">
+            </div>
+
+            <div class="form-row">
+            <label>Email</label>
+            <input type="email">
+            </div>
+            <br>
+
+            <div class="form-row">
+            <label>Gender</label>
+                <div class="cell-container">
+                    <input type="radio" name="gender" value="male">
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label>Female</label>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="form-row">
+            <label for="nat-opt">Nationality</label>
+                <div class="cell-container">
+            <select name=nationality id=nat-opt>
+                <!-- <option value="" disabled selected>-Select-</option> -->
+                <option value="" selected>-Select-</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Russia">Russia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+            </select>
+            </div>
+            </div>
+            <br>
+
+
+            <div class="form-row">
+            <label>Skills</label>
+                <div class="cell-container">
+                <input type="checkbox" id="asp-net" value="asp-net">
+                <label for="asp-net">Asp.Net</label>
+                <input type="checkbox" id="jquery" value="jquery">
+                <label for="jquery">jQuery</label>
+                <br>
+                <input type="checkbox" id="mvc" value="mvc">
+                <label for="mvc">MVC</label>
+                <input type="checkbox" id="sql-server" value="sql-server">
+                <label for="sql-server">SQL Server</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-row">
+            <label>Post applying for</label>
+                <div class="cell-container">
+                <input type="radio" name="post" id="trainee" value="trainee">
+                <label for="trainee">Trainee</label>
+                <input type="radio" name="post" id="soft-engineer" value="soft-engineer">
+                <label for="soft-engineer">Software Engineer</label>
+                <br>
+                <input type="radio" name="post" id="team-lead" value="team-lead">
+                <label for="team-lead">Team Leader</label>
+                <input type="radio" name="post" id="proj-mgr" value="proj-mgr">
+                <label for="proj-mgr">Project Manager</label>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="form-row">
+            <label>Upload Resume:</label>
+            <input type="file">
+            </div>
+            
+            <div class="form-row">
+            <label>Paste your resume:</label>
+                <div class="cell-container">
+                    <textarea rows="10" cols="45" ></textarea>
+            </div>
+            </div>
+</div>
+            <div class='in-line'>
+            <input type="checkbox" id="notify-status" value="notify-status">
+            <label for="notify-status">Notify me the status via Email</label>
+            <br>
+            <input type="radio" id="agree-terms" name="agree-terms">
+            <label for="agree-terms">I agree to terms & conditions</label>
+            </div>
+
+
+            <br>
+            <input type="submit" value="Submit">
+            <input style="margin-left: 20px;" type="reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>

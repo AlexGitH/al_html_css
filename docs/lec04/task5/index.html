@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec04: task 5</title>
+    <link rel="icon" href="/favicon.png">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            text-align: center;
+        }
+
+        div.container {
+            display: inline-block;
+            width: 104px;
+        }
+
+        div.container>div {
+            margin-top: 45px;
+            border: 2px solid cadetblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .rect1:hover {
+            transform: rotate(45deg);
+            transform-origin: right bottom;
+        }
+
+        .rect2:hover {
+            transform: rotate(45deg);
+            transform-origin: left bottom;
+        }
+
+        .rect3:hover {
+            transform: rotate(45deg);
+            transform-origin: center center;
+
+        }
+
+        .rect4:hover {
+            transform: rotate(-45deg);
+            transform-origin: right top;
+
+        }
+
+        .rect5:hover {
+            transform: scale(2,2);
+            transform-origin: right bottom;
+
+        }
+
+        .rect6:hover {
+            transform: skew(45deg);
+            transform-origin: right bottom;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- <h2>Завдання 5</h2> -->
+
+        <div class="container">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+            <div class="rect6"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec03: task 1</title>
+    <link rel="icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+
+        body>main>div>div {
+            /* div.line>div { */
+            float: right;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+
+        body>main>div>div:nth-child(even) {
+            /* div.line>div:nth-child(even) { */
+            background: #009abf;
+        }
+
+        body>main>div>div:hover {
+            background: #996e1f;
+        }
+
+        body>main>div>div:last-child::after {
+            content: "";
+            clear: both;
+        }
+
+
+   </style>
+</head>
+
+<body>
+    <main>
+        <H1>FLOAT</H1>
+        <h2>Завдання 1</h2>
+
+        <div class="line">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div class="line">
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

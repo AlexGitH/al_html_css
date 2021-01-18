@@ -1,0 +1,51 @@
+/* level 1 */
+blockquote {
+  color: green;
+}
+
+/* level 2 */
+ul.list a[href^="https"] {
+  color: red;
+}
+
+ul.list>li:last-child {
+  background-color: green;
+}
+
+ul.list+p {
+  font-size: 26px;
+}
+
+/* level 3 */
+div.text-box>h3:first-child {
+  color: pink;
+}
+
+p#greycol {
+  color: gray;
+}
+
+div.text-box>div>p {
+  color: red;
+}
+
+h3+p {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+/* level 4 */
+div.bg-box {
+  width: 800px;
+  height: 500px;
+  background: url("./pole-zelen-trava-dom-derevya.jpg") center center / 500px 300px no-repeat content-box,
+    url("./lamp-png-0.png") center top / 30px 50px repeat-x content-box,
+    url("./grass.png") center bottom / 150px 150px repeat-x content-box,
+    url("./donut.png") center right / 30px 30px repeat-y content-box,
+    url("./Ёжик.png") center left / 25px 25px repeat-y content-box;
+
+  background-color: green;
+}

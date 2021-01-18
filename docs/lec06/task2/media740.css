@@ -1,0 +1,92 @@
+#main {
+  flex-flow: column nowrap;
+}
+
+.column {
+  width: 100%;
+  margin: 2px auto;
+}
+
+.footer>div:last-child {
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+
+.footer>img {
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 38pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+.left {
+  font-size: 16pt;
+}
+.middle,
+.right {
+    font-size: 14pt;
+}
+
+/* MENU */
+.header-menu>nav>ul {
+  padding: 5px;
+  flex-flow: column nowrap;
+  font-size: 15pt;
+  align-items: flex-start;
+  flex-grow: 0;
+}
+
+.header-menu>nav>ul>li>a:hover {
+  font-size: 15pt;
+}
+
+.header-menu>nav>ul>li>a>svg {
+  width: 20pt;
+  margin-right: 5px;
+  margin-bottom: 4px;
+}
+
+.header-menu>nav>ul>li>a:hover>svg {
+  width: 20pt;
+}
+
+.header-menu>nav>ul>li {
+  line-height: 25pt;
+}
+
+.menu-btn {
+  visibility: visible;
+  display: flex;
+  order: 3;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.header-menu>nav {
+  background: lightyellow;
+  visibility: hidden;
+  display : none;
+  order: 3;
+  flex-basis: 100%;
+}
+
+#menu_toggle:checked ~ nav {
+    visibility: visible;
+    display:flex;
+    order: 3;
+}

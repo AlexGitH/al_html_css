@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.main-container {
+  flex: 1 1 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header>.titles:first-child {
+    margin-left: 6vw;
+}
+
+header>.titles:last-child {
+    font-size: 7.5rem;
+    margin-right: 16vw;
+}
+
+main {
+  flex: 1 0 auto;
+  padding:0;
+}
+
+
+iframe {
+  border: none;
+  height: 100vh;
+  flex: 1 0 360px;
+}
+
+.menu {
+  background: white;
+  padding-left: 10px;
+  text-indent: 5px;
+}
+
+ul {
+  border-right: 20px solid #F5EAFF;
+  padding-right: 10px;
+}
+
+ul>li {
+  width: 250px;
+  padding:0;
+}
+
+div.menu>ul>li>a {
+  line-height: 42px;
+  display: block;
+  padding-left: 5px;
+  color: #AC55F6;
+}
+
+div.menu>ul>li>a:hover {
+  background-color: #782EB7;
+  text-decoration: none;
+  color: white;
+}
+
+.menu>a.back {
+  transition: all 0.2s linear;
+  display: inline-block;
+  color: #270742;
+}
+
+.menu>a.back:hover {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.back::before {
+  color: #e58e69;
+  content: '\2190';
+  font-family: Helvetica, sans-serif;
+  font-size: 42px;
+  line-height: 41px;
+  vertical-align: middle;
+}
+
+/* BURGER MENU ICON */
+
+label.menu-btn {
+    visibility: hidden;
+    display:none;
+}
+
+/* KEEP SELECTED LINK COLOR */
+
+ul[data-li='1'] a[onclick*='1)'],
+ul[data-li='2'] a[onclick*='2)'],
+ul[data-li='3'] a[onclick*='3)'],
+ul[data-li='4'] a[onclick*='4)'],
+ul[data-li='5'] a[onclick*='5)'],
+ul[data-li='6'] a[onclick*='6)'],
+ul[data-li='7'] a[onclick*='7)'],
+ul[data-li='8'] a[onclick*='8)'],
+ul[data-li='9'] a[onclick*='9)'],
+ul[data-li='10'] a[onclick*='10)'] {
+  background: #AC55F7;
+  color: white;
+}

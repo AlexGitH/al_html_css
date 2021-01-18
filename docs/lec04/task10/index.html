@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lec04: task 10</title>
+    <link rel="icon" href="/favicon.png">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-timing-function: ease-in;
+            animation: action 4s infinite;
+        }
+        @keyframes action {
+        	0% {
+                transform: translate(0, 0);
+                background: red;
+            }
+            25% {
+                transform: translate(0, 300px);
+                background: blue;
+                transition: background 0.5s;
+            }
+            50% {
+                transform: translate(300px, 300px);
+                background: green;
+                transition: background 0.5s;
+            }
+            75%  {
+                transform: translate(300px, 0);
+                background: yellow;
+                transition: background 0.5s;
+            }
+            100% {
+                transform: translate(0, 0);
+                transition: background 0.5s;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- <h2>Завдання 10</h2> -->
+
+        <div></div>
+
+    </main>
+</body>
+
+</html>

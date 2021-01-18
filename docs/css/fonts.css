@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Perpetua Titling";
+    src: url('/fonts/PerpetuaTitlingMT-Light.woff2') format('woff2'),
+        url('/fonts/PerpetuaTitlingMT-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mistral';
+    src: url('/fonts/Mistral.woff2') format('woff2'),
+        url('/fonts/Mistral.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MinionPro';
+    src: url('/fonts/MinionPro-Regular.woff2') format('woff2'),
+        url('/fonts/MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NuevaStd-Cond';
+    src: url('/fonts/NuevaStd-Cond.woff2') format('woff2'),
+        url('/fonts/NuevaStd-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
